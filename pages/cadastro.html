@@ -43,15 +43,15 @@
                                 <p>Dados pessoais</p>
                                 <form action="">
                                     <label for="fname">Nome</label>
-                                    <input type="text" name="fname" id="">
+                                    <input type="text" name="fname" id="name-field">
                                     <label for="fsurname">Sobrenome</label>
-                                    <input type="text" name="fsurname" id="">
+                                    <input type="text" name="fsurname" id="surname-field">
                                     <label for="fdateofbirth">Data de nascimento</label>
-                                    <input type="date" name="fdateofbirth" id="">
+                                    <input type="date" name="fdateofbirth" id="birthday-field">
                                     <label for="frg">RG</label>
-                                    <input type="number" name="frg" id="">
+                                    <input type="number" name="frg" id="rg-field">
                                     <label for="fcpf">CPF</label>
-                                    <input type="number" name="fcpf" id="">
+                                    <input type="number" name="fcpf" id="cpf-field">
                                 </form>
                             </article>
                         </div>
@@ -100,6 +100,7 @@
                     </button>
                 </div>
             </div>
+            <button id="submit-btn">Submit</button>
         </section>
     </main>
 
@@ -122,7 +123,10 @@
         </picture>
     </footer>
     
-    <script src="../scripts/index.js"></script>
+    <script src="../JS/view/entrada-view.js"></script>
+    <script src="../JS/model/entrada-model.js"></script>
+    <script src="../JS/controller/entrada-controller.js"></script>
+
 </body>
 
 </html>
