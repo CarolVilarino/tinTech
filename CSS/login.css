@@ -24,6 +24,13 @@ form{
     margin-right: -50%;
     transform: translate(-50%, -50%)  
 }
+form{
+    background: rgba(124, 32, 32, 0.1);
+    backdrop-filter:blur(10px);
+    border-radius: 8px;
+    width: 25%;
+    
+}
 img{
    width: 55%;
    height: 80%;
