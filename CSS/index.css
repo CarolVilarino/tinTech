@@ -10,41 +10,15 @@ body,html{
 body{
     display: flex;
 }
-
-.animated-icon2 span:nth-child(1) {
-    top: 0px;
-    }
-    
-    .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
-    top: 10px;
-    }
-    
-    .animated-icon2 span:nth-child(4) {
-    top: 20px;
-    }
-    
-    .animated-icon2.open span:nth-child(1) {
-    top: 11px;
-    width: 0%;
+img{
+    width: 50%;
+    height: 50%;
+}
+section{
+    margin: 0; 
+    position: absolute;
+    top: 45%;
     left: 50%;
-    }
-    
-    .animated-icon2.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    }
-    
-    .animated-icon2.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    }
-    
-    .animated-icon2.open span:nth-child(4) {
-    top: 11px;
-    width: 0%;
-    left: 50%;
-    }
+    margin-right: -50%;
+    transform: translate(-50%, -50%)    
+}

@@ -24,15 +24,29 @@ form{
     margin-right: -50%;
     transform: translate(-50%, -50%)  
 }
+
 form{
     background: rgba(124, 32, 32, 0.1);
     backdrop-filter:blur(10px);
     border-radius: 8px;
-    width: 25%;
+    width: 28%;
     
 }
 img{
    width: 55%;
    height: 80%;
-   margin-top: 3.5%;   
+   margin-top: 3.5%;     
 }
+.margin1{
+    margin-top: 5%;   
+    padding: 1% 10%;
+}
+.margin2{
+    margin-top: 1%;
+    padding: 1% 10%;
+}
+.btn{
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+}
+
