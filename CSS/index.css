@@ -23,5 +23,11 @@ body{
     border-radius: 10px;
     backdrop-filter:blur(5px);
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    height: 150px;
+}
 
