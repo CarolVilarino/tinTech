@@ -15,6 +15,8 @@ $("#submit-btn").click((event)=>{
     controller.processamentoDeCPF('cpf-field');
     controller.processamentoDeCEP('cep-field');
 
+    controller.processamentoDeSenha('password-field');
+
 })
 
 
