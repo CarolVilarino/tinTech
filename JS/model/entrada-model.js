@@ -107,7 +107,7 @@ class ValidaEntrada{
     validaData(input){
         const currentDate = new Date;
         input = input.slice(0,4)
-        if (parseInt(currentDate.getFullYear()) - parseInt(input) < 18) throw Error()
+        if (parseInt(currentDate.getFullYear()) - parseInt(input) < 16) throw Error()
     }
 
 
