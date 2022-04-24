@@ -9,4 +9,30 @@ body,html{
 }
 body{
     display: flex;
+    background-image: url(../images/pictures/background-login.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size:cover;
+    background-position: center;
+}
+
+form{
+    margin: 0; 
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)  
+}
+form{
+    background: rgba(124, 32, 32, 0.1);
+    backdrop-filter:blur(10px);
+    border-radius: 8px;
+    width: 25%;
+    
+}
+img{
+   width: 55%;
+   height: 80%;
+   margin-top: 3.5%;   
 }
