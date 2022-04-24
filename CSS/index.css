@@ -27,7 +27,8 @@ main{
     display: flex;
     flex-direction: column;
 }
-footer{
-    height: 150px;
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
