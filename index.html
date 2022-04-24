@@ -6,16 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <link rel="stylesheegt" href="./TinTech/CSS/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheegt" href="./CSS/index.css">
     <script src="./JS/index.js"></script>
 
     <title>TinTech</title>
 </head>
 
-<body>
+<body style="background-image:url(./images/pictures/background-login.jpg)" style="background-repeat: no-repeat;" style="background-repeat: no-repeat;">
     <header class="cabecalho">
+        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="./images/icon/TinTech_LOGO.png" alt="Página Home" height="35px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
         
+              <div class="collapse navbar-collapse" id="navbarsExample01">
+                <ul class="navbar-nav me-auto mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/login.html"> Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/precos.html"> Preços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/dicas.html"> Dicas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"href='./pages/contatos.html'> Contatos</a>
+                  </li>
+                    </ul>
+                  </li>
+                </ul>
+                <form>
+                  <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+
 
 
     </header>
@@ -23,14 +59,17 @@
     <main>
 
         <section class="main-top">
-            <figure class="bannerPrincipal">
-                <img src="./images/pictures/background-img.png" alt="Grupo de pessoas ao redor de uma mesa">
-            </figure>
+
             <article>
-                <h2>Frase de impacto</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corrupti nostrum ab commodi
-                    aperiam, laborum quia vero veritatis quos, explicabo ipsum nobis? Quo, quam necessitatibus earum
-                    nobis laudantium voluptas quibusdam.</p>
+                <h2>O Match dos seus sonhos.</h2>
+                
+                <h6><img src="./images/pictures/imgindexinicial.png" alt="Grupo de pessoas ao redor de uma mesa" width="500px" height="300px">
+                    TinTech, uma plataforma onde unimos empregador e empregado em um 'date' virtual um tanto quanto perfeito,
+                    tanto você empregador que busca
+                    um profissional qualificado, e tanto para você colaborador que busca ingressar no mercado de
+                    trabalho TECH.
+                </h6>
+                
             </article>
 
             <div class="botoes-inscricao">
@@ -39,73 +78,107 @@
             </div>
         </section>
 
-        <section class="empresas-parceiras">
-            <article>
-                <h2> Empresas Parceiras</h2>
+        <section class="empresas-parceiras" style="padding: 0.08%;">
+            <article style="text-align: center;">
+                <h2> Empresas Parceiras:</h2>
             </article>
 
-            <figure>
-                <img src="" alt="Empresa parceira 1">
-                <img src="" alt="Empresa parceira 2">
-                <img src="" alt="Empresa parceira 3">
-                <img src="" alt="Empresa parceira 4">
-                <img src="" alt="Empresa parceira 5">
-                <img src="" alt="Empresa parceira 6">
-                <img src="" alt="Empresa parceira 7">
+            <figure style="padding: 1%;">
+                <img src="./images/pictures/imagem_logo_adidas.png" alt="Empresa parceira 1" height="180" width="180" style="border-radius: 100px;">
+                <img src="./images/pictures/imagem_logo_skype.png" alt="Empresa parceira 7" height="180" width="180" style="border-radius: 50px;">
+                <img src="./images/pictures/imagem_logo_amazon.png" alt="Empresa parceira 2" height="180" width="180" style="border-radius: 100px;">
+                <img src="./images/pictures/imagem_logo_apple.png" alt="Empresa parceira 3" height="180" width="180" style="border-radius: 50px;">
+                <img src="./images/pictures/imagem_logo_citibank.png" alt="Empresa parceira 4" height="180" width="180" style="border-radius: 1000px;">
+                <img src="./images/pictures/imagem_logo_ibm.png" alt="Empresa parceira 6" height="180" width="180" style="border-radius: 50px;">
+                <img src="./images/pictures/imagem_logo_dell.png" alt="Empresa parceira 5" height="180" width="180" style="border-radius: 100px;">
+                <img src="./images/pictures/imagem_logo_tesla.png" alt="Empresa parceira 8" height="180" width="180" style="border-radius: 50px;">
+                <img src="./images/pictures/imagem_logo_twitter.png" alt="Empresa parceira 9" height="180" width="180" style="border-radius: 100px;">
+                <img src="./images/pictures/imagem_logo_youtube.png" alt="Empresa parceira 10" height="180" width="180" style="border-radius: 50px;">
             </figure>
 
         </section>
 
-        <section class="profiles">
-            <div class="card-perfil">
-                <figure>
-                    <img src="" alt="Pessoa 1">
-                </figure>
-                <article>
-                    <h2>Nome Pessoa 1</h2>
-                    <p>Consegui meu primeiro emprego como dev através dessa plantaforma!</p>
-                </article>
-            </div>
+        <section id="menu-de-cadastro">
+          
 
-            <div class="card-perfil">
-                <figure>
-                    <img src="" alt="Pessoa 2">
-                </figure>
-                <article>
-                    <h2>Nome Pessoa 2</h2>
-                    <p>Consegui meu primeiro emprego como dev através dessa plantaforma!</p>
-                </article>
-            </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                    data-bs-interval="false">
 
+                    <div class="carousel-indicators">
+                        <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="text-align: center;" style="z-index:auto">
+
+                            <img src="./images/imagens-usuarios/imagem-comentario-gabriel.png" alt="Image" height="600" width="600" style="border-radius: 1000px;">
+
+
+                        </div>
+                        <div class="carousel-item" style="text-align: center;" style="z-index:auto">
+
+                            <img src="./images/imagens-usuarios/imagem-comentario-larrisagaspar.png" alt="Image" height="600" width="600" style="border-radius: 1000px;">
+
+
+                        </div>
+                        <div class="carousel-item" style="text-align: center;" style="z-index:auto">
+
+                            <img src="./images/imagens-usuarios/imagem-comentario-vivi.png" alt="Image" height="600" width="600" style="border-radius: 1000px;">
+
+
+                       
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
         <article>
-            <h3>markets:</h3>
+            <h3>Filiais:</h3>
             <ul>
-                <li>Brasil</li>
-                <li>Estados Unidos</li>
-                <li>Inglaterra</li>
-                <li>Chile</li>
+                <li>Brasil - Curitiba</li>
+                <li>Estados Unidos - New York</li>
+                <li>Inglaterra - Londres</li>
+                <li>Chile - Santiago</li>
             </ul>
+        
+
+
+        <div style='text-align:right'>
+            <ol><b>tintech@hotmail.com.br - </b><img src="./images/icon/icon-email.png" alt="Icone de email" height="30"
+                    width="30"></ol>
+            <ol><b>(41) 4002-8922  - <img src="./images/icon/icon-telephone.png" alt="Icone de Contato" height="30"
+                        width="30"></b></ol>
+            <ol><b>@TinTech - </b><img src="./images/icon/icon-instagram.png" alt="Icone de Instagram" height="30"
+                    width="30"></ol>
+            <ol><b>TinTech
+                    Corporation - </b><img src="./images/icon/icon-linkedin.png" alt="Icone de Linkedin" height="30"
+                    width="30"> </ol>
+        </div>
         </article>
 
-        <picture>
-            <img src="" alt="Icone de email">
-            <img src="" alt="Icone de youtube">
-            <img src="" alt="Icone de WhatsApp">
-            <img src="" alt="Icone de facebook">
-        </picture>
+        <!-- <p> Todos os direitos reservados ⓒ Equipe 7*</p> -->
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 
 </html>
+
+<!-- Diminuir o tamanho dos icones, arrumar o carrosel e inserir barra de menu -->

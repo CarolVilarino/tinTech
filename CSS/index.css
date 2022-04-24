@@ -10,41 +10,25 @@ body,html{
 body{
     display: flex;
 }
+.menu-de-cadastro{
+    margin: 0; 
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(124, 32, 32, 0.1);
+    min-height: 220px;
+    padding: 1%;
+    border-radius: 10px;
+    backdrop-filter:blur(5px);
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-.animated-icon2 span:nth-child(1) {
-    top: 0px;
-    }
-    
-    .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
-    top: 10px;
-    }
-    
-    .animated-icon2 span:nth-child(4) {
-    top: 20px;
-    }
-    
-    .animated-icon2.open span:nth-child(1) {
-    top: 11px;
-    width: 0%;
-    left: 50%;
-    }
-    
-    .animated-icon2.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    }
-    
-    .animated-icon2.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    }
-    
-    .animated-icon2.open span:nth-child(4) {
-    top: 11px;
-    width: 0%;
-    left: 50%;
-    }
