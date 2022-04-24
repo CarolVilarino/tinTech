@@ -3,13 +3,13 @@ class Entrada{
 
     }
 
-    processamentoDeInputDeTexto(field){
+    processamentoDeInputDeTexto(field, isNumberAllowed){
         const model = new ValidaEntrada();
         const view = new EntradaView();
 
         const input = $(`#${field}`);
         
-        const isValid = model.validarNome(input);
+        const isValid = model.validarNome(input, isNumberAllowed);
 
         switch (isValid){
             case false:
@@ -18,9 +18,6 @@ class Entrada{
             case true:
                 view.entradaValida(input);
         }
-        // if (!isValid){
-            
-        // }
     }
 
     processamentoDeCPF(field){

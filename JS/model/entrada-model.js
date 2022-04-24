@@ -4,13 +4,13 @@ class ValidaEntrada{
     }
 
     
-    validarNome(entrada){
+    validarNome(entrada, isNumberAllowed){
         if (entrada.val() === '') return false
         const caracteresEspeciaisAceitos = 'áàâãòóôõèéêìíîúùûç '
         try{
             entrada.val().split('').forEach(element => {
                 if ((/\W|_/).test(element) && !caracteresEspeciaisAceitos.includes(element.toLowerCase())) throw Error();
-                if ((0-9).test(element)) throw Error();
+                if (!isNumberAllowed && (/[0-9]/).test(element)) throw Error();
             });
             return true;
         } catch(e){
