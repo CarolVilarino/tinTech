@@ -49,9 +49,9 @@
                                     <label for="fdateofbirth">Data de nascimento</label>
                                     <input type="date" name="fdateofbirth" id="birthday-field">
                                     <label for="frg">RG</label>
-                                    <input type="number" name="frg" id="rg-field">
+                                    <input type="number" name="frg" id="rg-field" placeholder="99.999.999-9" maxlength="9">
                                     <label for="fcpf">CPF</label>
-                                    <input type="number" name="fcpf" id="cpf-field">
+                                    <input type="number" name="fcpf" id="cpf-field" placeholder="999.999.999-99" maxlength="11">
                                 </form>
                             </article>
                         </div>
@@ -61,9 +61,9 @@
                                 <p>Dados de contato</p>
                                 <form action="">
                                     <label for="femail">E-mail*</label>
-                                    <input type="email" name="femail" id="" placeholder="example@tintech.com">
+                                    <input type="email" name="femail" id="email-field" placeholder="example@tintech.com">
                                     <label for="fphone">Telefone</label>
-                                    <input type="tel" name="fphone" id="" placeholder="(00)99999-9999">
+                                    <input type="tel" name="fphone" id="tel-field" placeholder="(00)99999-9999">
                                 </form>
                             </article>
                         </div>
@@ -73,19 +73,32 @@
                                 <p>Dados de localização</p>
                                 <form action="">
                                     <label for="fcep">CEP</label>
-                                    <input type="number" name="fcep" id="" placeholder="999999-99">
+                                    <input type="number" name="fcep" id="cep-field" placeholder="999999-99">
                                     <label for="fuf">UF</label>
-                                    <input type="text" name="fuf" id="">
+                                    <input type="text" name="fuf" id="uf-field">
                                     <label for="fnacionalidade">Nacionalidade</label>
-                                    <input type="text" name="fnacionalidade" id="">
+                                    <input type="text" name="fnacionalidade" id="nacionalidade-field">
                                     <label for="fcidade">Cidade</label>
-                                    <input type="text" name="fcidade" id="">
+                                    <input type="text" name="fcidade" id="cidade-field">
                                     <label for="fbairro">Bairro</label>
-                                    <input type="text" name="fbairro" id="">
+                                    <input type="text" name="fbairro" id="bairro-field">
                                     <label for="frua">Rua</label>
-                                    <input type="text" name="frua" id="">
+                                    <input type="text" name="frua" id="rua-field">
                                     <label for="fcomplemento">Complemento</label>
-                                    <input type="text" name="fcomplemento" id="">
+                                    <input type="text" name="fcomplemento" id="complemento-field">
+                                </form>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <article>
+                                <h2>4ª Etapa de Cadastro</h2>
+                                <p>Criação de senha</p>
+                                <form action="">
+                                    <label for="fsenha">Senha</label>
+                                    <input type="password" name="fsenha" id="password-field" placeholder="password">
+                                    <label for="fsenha2">Confirmação de senha</label>
+                                    <input type="password" name="fsenha2" id="password2-field" placeholder="password">
+                                   
                                 </form>
                             </article>
                         </div>
@@ -126,6 +139,7 @@
     <script src="../JS/view/entrada-view.js"></script>
     <script src="../JS/model/entrada-model.js"></script>
     <script src="../JS/controller/entrada-controller.js"></script>
+    <script src="../JS/cadastro.js"></script>
 
 </body>
 
