@@ -5,9 +5,9 @@ class ValidaEntrada{
 
     
     validarNome(entrada, isNumberAllowed){
-        if (entrada.val() === '') return false
-        const caracteresEspeciaisAceitos = 'áàâãòóôõèéêìíîúùûç '
         try{
+            if (entrada.val() === '') throw Error()
+            const caracteresEspeciaisAceitos = 'áàâãòóôõèéêìíîúùûç '
             entrada.val().split('').forEach(element => {
                 if ((/\W|_/).test(element) && !caracteresEspeciaisAceitos.includes(element.toLowerCase())) throw Error();
                 if (!isNumberAllowed && (/[0-9]/).test(element)) throw Error();
@@ -61,4 +61,18 @@ class ValidaEntrada{
     validaCpf(){
 
     }
+
+    validarEmail(input){
+        const email = input.val();
+        if(email.indexOf('@') === -1 || email.indexOf('.') === -1 || email.length < 5) return false
+        return true
+    }
+
+    validaData(input){
+        const currentDate = new Date;
+        input = input.slice(0,4)
+        if (parseInt(currentDate.getFullYear()) - parseInt(input) < 18) throw Error()
+    }
+
+
 }

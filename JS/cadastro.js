@@ -7,6 +7,9 @@ $("#submit-btn").click((event)=>{
     controller.processamentoDeInputDeTexto('nacionalidade-field', false);
     controller.processamentoDeInputDeTexto('complemento-field', true);
 
+    controller.processamentoDeEmail('email-field');
+    controller.processamentoDeData('birthday-field')
+
     controller.processamentoDeNumeros('rg-field');
     controller.processamentoDeNumeros('tel-field');
     controller.processamentoDeNumeros('cpf-field');

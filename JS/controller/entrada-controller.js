@@ -20,6 +20,45 @@ class Entrada{
         }
     }
 
+    processamentoDeEmail(field){
+        const model = new ValidaEntrada();
+        const view = new EntradaView();
+
+        const input = $(`#${field}`);
+        
+        const isValid = model.validarEmail(input);
+        switch (isValid){
+            case false:
+                view.entradaInvalida(input);
+                break;
+            case true:
+                view.entradaValida(input);
+        }
+    }
+
+    processamentoDeData(field){
+        const model = new ValidaEntrada();
+        const view = new EntradaView();
+
+        const input = $(`#${field}`);
+        const data = input.val()
+        console.log(data)
+        console.log(data.length)
+        try{
+            const isValid = model.verificaTamanhoMinimo(data, 10);
+            model.validaData(data)
+            switch (isValid){
+                case false:
+                    view.entradaInvalida(input);
+                    break;
+                case true:
+                    view.entradaValida(input);
+            }
+        } catch(e){
+            view.entradaInvalida(input);
+        }
+    }
+
     processamentoDeCPF(field){
     }
 
