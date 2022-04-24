@@ -58,8 +58,44 @@ class ValidaEntrada{
         this.error = true;
     }
 
-    validaCpf(){
+    validaCpf(input){
+        this.verificaTamanhoMinimo(input, 11)
+        const cpfArr = input.split('');
+        
+        const dgtVerificador2 = cpfArr.pop();
+        const dgtVerificador1 = cpfArr.pop();
+        const cpfArrNumbers = cpfArr.map((element) => parseInt(element))
 
+        this.etapasValidacaoCPF(1, cpfArrNumbers,dgtVerificador1);
+        cpfArrNumbers.push(parseInt(dgtVerificador1));
+        this.etapasValidacaoCPF(2, cpfArrNumbers,dgtVerificador2);
+    }
+
+    etapasValidacaoCPF(etapa, cpfArrNumbers, dgtVerificador){
+        let arrayDeValidacao;
+        switch (etapa){
+            case 1:
+                arrayDeValidacao = [10,9,8,7,6,5,4,3,2];
+                break
+            case 2:
+                arrayDeValidacao = [11,10,9,8,7,6,5,4,3,2];
+                break
+        }
+
+        const restoDaDivisao = cpfArrNumbers.reduce((prev, current, index) => {
+            return prev + (current * arrayDeValidacao[index])
+        }, 0) * 10 % 11
+
+        let result = restoDaDivisao;
+        switch (result){
+            case 10:
+                result = 0;
+                break;
+            case 11:
+                result = 0;
+                break;
+        }
+        if (result  != dgtVerificador) throw new Error('[ERRO] CPF inválido')
     }
 
     validarEmail(input){

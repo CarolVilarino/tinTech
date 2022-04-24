@@ -42,8 +42,6 @@ class Entrada{
 
         const input = $(`#${field}`);
         const data = input.val()
-        console.log(data)
-        console.log(data.length)
         try{
             const isValid = model.verificaTamanhoMinimo(data, 10);
             model.validaData(data)
@@ -60,6 +58,12 @@ class Entrada{
     }
 
     processamentoDeCPF(field){
+        const model = new ValidaEntrada();
+        const view = new EntradaView();
+
+        const input = $(`#${field}`);
+        const cpf = input.val();
+        model.validaCpf(cpf);
     }
 
     processamentoDeCEP(field){

@@ -12,7 +12,7 @@ $("#submit-btn").click((event)=>{
 
     controller.processamentoDeNumeros('rg-field');
     controller.processamentoDeNumeros('tel-field');
-    controller.processamentoDeNumeros('cpf-field');
+    controller.processamentoDeCPF('cpf-field');
     controller.processamentoDeCEP('cep-field');
 
 })
@@ -20,4 +20,12 @@ $("#submit-btn").click((event)=>{
 
 $("#cep-field").keydown((event)=>{    
     controller.verificandoTamanho('cep-field', 8, event)
+})
+
+$("#rg-field").keydown((event)=>{    
+    controller.verificandoTamanho('rg-field', 9, event)
+})
+
+$("#cpf-field").keydown((event)=>{    
+    controller.verificandoTamanho('cpf-field', 11, event)
 })
