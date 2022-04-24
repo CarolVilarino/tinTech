@@ -63,7 +63,12 @@ class Entrada{
 
         const input = $(`#${field}`);
         const cpf = input.val();
-        model.validaCpf(cpf);
+        try{
+            model.validaCpf(cpf);
+            view.entradaValida(input);
+        } catch(e){
+            view.entradaInvalida(input);
+        }
     }
 
     processamentoDeCEP(field){
