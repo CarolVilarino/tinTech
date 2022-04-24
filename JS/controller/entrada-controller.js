@@ -23,7 +23,7 @@ class Entrada{
         // }
     }
 
-    processamentoDeCPF(){
+    processamentoDeCPF(field){
     }
 
     processamentoDeCEP(field){
@@ -31,22 +31,40 @@ class Entrada{
         const view = new EntradaView();
 
         const input = $(`#${field}`);
-
+        const cep = input.val();
+       
         try{
-            const isValid = model.validarNumero(input).then((result) => {
-                console.log(result)
-                switch (result){
-                    case false:
+            model.verificaTamanhoMinimo(cep, 8)
+            $(document).ready(()=>{
+                $.ajax(
+                    {url: `https://viacep.com.br/ws/${cep}/json/`, 
+                    success: response => {
+                        if (!("erro" in response)) {
+                            model.infosCepValido(response);
+                            view.entradaValida(input);
+    
+                            const information = model.information;
+                            view.escreveInfosCep(information)
+                            view.FormatacaoCepEntradas(view.entradaValida);
+                        } else {
+                            model.infosCepInvalido(response);
+                            view.entradaInvalida(input);
+                            const information = model.information;
+                            view.escreveInfosCep(information);
+                            view.FormatacaoCepEntradas(view.entradaInvalida);
+                        }
+                    },
+                    error: (err) => {
                         view.entradaInvalida(input);
-                        break;
-                    case true:
-                        view.entradaValida(input);
-                }
-            }).catch((err)=>{
-                console.log('erro')
+                        view.FormatacaoCepEntradas(view.entradaInvalida);
+                    }
+                })
             })
-        }catch(e){
+        } catch(e){
+            const information = model.information;
+            view.escreveInfosCep(information)
             view.entradaInvalida(input);
+            view.FormatacaoCepEntradas(view.entradaInvalida);
         }
     }
     
@@ -74,21 +92,21 @@ class Entrada{
     }
 }
 
-const controller = new Entrada();
+// const controller = new Entrada();
 
-$("#submit-btn").click((event)=>{
-    // console.log(event);
-    controller.processamentoDeInputDeTexto('name-field');
-    controller.processamentoDeInputDeTexto('surname-field');
+// $("#submit-btn").click((event)=>{
+//     // console.log(event);
+//     controller.processamentoDeInputDeTexto('name-field');
+//     controller.processamentoDeInputDeTexto('surname-field');
 
-    controller.processamentoDeNumeros('rg-field');
-    controller.processamentoDeNumeros('tel-field');
-    controller.processamentoDeNumeros('cpf-field');
-    controller.processamentoDeCEP('cep-field');
+//     controller.processamentoDeNumeros('rg-field');
+//     controller.processamentoDeNumeros('tel-field');
+//     controller.processamentoDeNumeros('cpf-field');
+//     controller.processamentoDeCEP('cep-field');
 
-})
+// })
 
 
-$("#cep-field").keydown((event)=>{    
-    controller.verificandoTamanho('cep-field', 8, event)
-})
+// $("#cep-field").keydown((event)=>{    
+//     controller.verificandoTamanho('cep-field', 8, event)
+// })
