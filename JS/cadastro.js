@@ -16,7 +16,7 @@ $("#submit-btn").click((event)=>{
     controller.processamentoDeCEP('cep-field');
 
     controller.processamentoDeSenha('password-field');
-
+    controller.processamentoConfirmacao('password-field','password2-field');
 })
 
 

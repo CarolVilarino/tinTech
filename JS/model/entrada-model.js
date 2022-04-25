@@ -128,6 +128,10 @@ class ValidaEntrada{
         })
 
         if (!hasSpecialCharacter && !hasNumber && !hasLowerCase && !hasUpperCase) return false;
-        return true; 
+        return true;
+    }
+
+    confirmacaoDeSenha(entrada, confirmacao){
+        if(confirmacao != entrada) throw new Error('[ERRO] Confirmação de senha não condiz com a senha');
     }
 }
