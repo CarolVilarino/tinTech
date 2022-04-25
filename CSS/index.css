@@ -1,15 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
-}
-body,html{
-    width: 100%;
-    height: 100%;
-}
-body{
-    display: flex;
-}
 .menu-de-cadastro{
     margin: 0; 
     position: absolute;
@@ -27,8 +15,5 @@ main{
     display: flex;
     flex-direction: column;
 }
-body{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
