@@ -142,14 +142,32 @@ class Entrada{
 
         const input = $(`#${field}`);
         const senha = input.val();
-        
-        const isValid = model.verificaSenha(senha);
-        switch (isValid){
-            case false:
-                view.entradaInvalida(input);
-                break;
-            case true:
-                view.entradaValida(input);
+        try{
+            const isValid = model.verificaSenha(senha);
+            switch (isValid){
+                case false:
+                    view.entradaInvalida(input);
+                    break;
+                case true:
+                    view.entradaValida(input);
+            }
+        } catch(e){
+            view.entradaInvalida(input);
+        }
+    }
+    
+    processamentoConfirmacao(baseField, field){
+        const model = new ValidaEntrada();
+        const view = new EntradaView();
+
+        const senha = $(`#${baseField}`).val(); 
+        const input = $(`#${field}`);
+        const confirmacaoSenha = input.val();
+        try{
+            model.confirmacaoDeSenha(senha, confirmacaoSenha);
+            view.entradaValida(input);
+        } catch(e){
+            view.entradaInvalida(input);
         }
     }
 }
