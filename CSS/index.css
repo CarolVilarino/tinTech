@@ -1,3 +1,4 @@
+
 .menu-de-cadastro{
     margin: 0; 
     position: absolute;
@@ -15,5 +16,14 @@ main{
     display: flex;
     flex-direction: column;
 }
-
+.bannerInicio{
+    width: 100%;
+    height: 500px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    background-color: coral;
+}
 
