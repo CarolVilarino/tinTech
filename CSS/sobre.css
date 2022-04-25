@@ -10,3 +10,6 @@ body,html{
 body{
     display: flex;
 }
+.navbar{
+    background-color: coral;
+}

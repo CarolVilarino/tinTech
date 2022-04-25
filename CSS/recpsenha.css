@@ -11,27 +11,26 @@ form{
     border-radius: 8px;
     width: 28%;
 }
+main{
+    height: 160%;
+    width: 100%;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .margin1{
     margin-top: 5%;   
     padding: 1% 10%;
 }
-
-.margin2{
-    margin-top: 1%;
-    padding: 1% 10%;
+.navbar{
+    background-color: rgb(255, 127, 80);
 }
-
-.btn{
-    border-radius: 10px;
-    color: rgb(10, 0, 0);
+footer{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-}
-.btn-primary , .navbar{
-    background-color: coral;
+    justify-content: space-around;
+    padding: 0 15%;
 }
 ol{
     width: 100%;
@@ -47,16 +46,11 @@ ol{
     justify-content: center;
     flex-direction: column;
 }
-footer{
+.btn-primary{
+    border-radius: 10px;
+    color: rgb(10, 0, 0);
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 15%;
+    justify-content: center;
+    
 }
-.rcpsenha{
-    display: flex;
-    justify-content: end;
-    margin-right: 20px;
-}
-
-
