@@ -135,23 +135,39 @@ class Entrada{
         const view = new EntradaView();
         view.apagaExtra(field, maxLength, event);
     }
+
+    processamentoDeSenha(field){
+        const model = new ValidaEntrada();
+        const view = new EntradaView();
+
+        const input = $(`#${field}`);
+        const senha = input.val();
+        try{
+            const isValid = model.verificaSenha(senha);
+            switch (isValid){
+                case false:
+                    view.entradaInvalida(input);
+                    break;
+                case true:
+                    view.entradaValida(input);
+            }
+        } catch(e){
+            view.entradaInvalida(input);
+        }
+    }
+    
+    processamentoConfirmacao(baseField, field){
+        const model = new ValidaEntrada();
+        const view = new EntradaView();
+
+        const senha = $(`#${baseField}`).val(); 
+        const input = $(`#${field}`);
+        const confirmacaoSenha = input.val();
+        try{
+            model.confirmacaoDeSenha(senha, confirmacaoSenha);
+            view.entradaValida(input);
+        } catch(e){
+            view.entradaInvalida(input);
+        }
+    }
 }
-
-// const controller = new Entrada();
-
-// $("#submit-btn").click((event)=>{
-//     // console.log(event);
-//     controller.processamentoDeInputDeTexto('name-field');
-//     controller.processamentoDeInputDeTexto('surname-field');
-
-//     controller.processamentoDeNumeros('rg-field');
-//     controller.processamentoDeNumeros('tel-field');
-//     controller.processamentoDeNumeros('cpf-field');
-//     controller.processamentoDeCEP('cep-field');
-
-// })
-
-
-// $("#cep-field").keydown((event)=>{    
-//     controller.verificandoTamanho('cep-field', 8, event)
-// })

@@ -110,5 +110,28 @@ class ValidaEntrada{
         if (parseInt(currentDate.getFullYear()) - parseInt(input) < 16) throw Error()
     }
 
+    verificaSenha(entrada){
+        this.verificaTamanhoMinimo(entrada, 8);
+        const arrSenha = entrada.split('')
 
+        let hasSpecialCharacter = false;
+        let hasNumber = false;
+        let hasLowerCase = false;
+        let hasUpperCase = false;
+
+        arrSenha.forEach((element) => {
+            console.log(element)
+            if ((/\W|_/).test(element)) hasSpecialCharacter = true;
+            if ((/[0-9]/).test(element)) hasNumber = true;
+            if ((/[a-z]/).test(element)) hasLowerCase = true;
+            if ((/[A-Z]/).test(element)) hasUpperCase = true;
+        })
+
+        if (!hasSpecialCharacter && !hasNumber && !hasLowerCase && !hasUpperCase) return false;
+        return true;
+    }
+
+    confirmacaoDeSenha(entrada, confirmacao){
+        if(confirmacao != entrada) throw new Error('[ERRO] Confirmação de senha não condiz com a senha');
+    }
 }
