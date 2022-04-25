@@ -1,12 +1,12 @@
-* {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
-}
-body,html{
-    width: 100%;
-    height: 100%;
-}
-body{
+#conteudo-da-pagina {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(../images/pictures/background-login.jpg);
+    background-repeat: repeat;
+}
+
+#prox-pag {
+    padding: 5px;
+    background-color: lightsalmon;
 }
