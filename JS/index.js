@@ -19,9 +19,8 @@ $("#newsletter-btn").click((event)=>{
             errorCounter++
         }
 
-        if(errorCounter > 0) return alert(`Campos inválidos: ${errorCounter}`) 
+        if(errorCounter > 0) return 
         alert('Cadastro Realizado com Sucesso!');
-        
         controller.escondePopup('popup-div')
     })
     
