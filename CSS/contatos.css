@@ -1,0 +1,60 @@
+.enviar-email {
+    width: fit-content;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto;
+    font-weight: bold;
+    background: rgba(124, 32, 32, 0.1);
+    backdrop-filter:blur(10px);
+}
+
+#campo-de-email, #campo-de-mensagem, #btn-enviar {
+    border-radius: 5px;
+    font-style: oblique;
+    margin-bottom: 5px;
+}
+
+
+
+.conteudo-da-pag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(../images/pictures/background-login.jpg);
+    background-repeat: repeat;
+}
+
+#btn-enviar {
+    padding: 5px;
+}
+
+
+.card-body{
+    width: 100%;  
+}
+
+.col{
+    width: 300px;
+    margin-bottom: 50px;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+}
+.card-body:hover {
+    border: 1px solid lightsalmon;
+}
+
+a:hover {
+    font-size: large;
+}
