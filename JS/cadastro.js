@@ -2,21 +2,44 @@ const controller = new Entrada();
 
 $("#submit-btn").click((event)=>{
     // console.log(event);
-    controller.processamentoDeInputDeTexto('name-field', false);
-    controller.processamentoDeInputDeTexto('surname-field', false);
-    controller.processamentoDeInputDeTexto('nacionalidade-field', false);
-    controller.processamentoDeInputDeTexto('complemento-field', true);
+    let errorCounter = 0;
+    try{controller.processamentoDeInputDeTexto('name-field', false)}
+    catch(e){errorCounter++};
+        
+    try{controller.processamentoDeInputDeTexto('surname-field', false)}
+    catch(e){errorCounter++};
 
-    controller.processamentoDeEmail('email-field');
-    controller.processamentoDeData('birthday-field')
+    try{controller.processamentoDeData('birthday-field');}
+    catch(e){errorCounter++};
 
-    controller.processamentoDeNumeros('rg-field');
-    controller.processamentoDeNumeros('tel-field');
-    controller.processamentoDeCPF('cpf-field');
-    controller.processamentoDeCEP('cep-field');
+    try{controller.processamentoDeNumeros('rg-field');}
+    catch(e){errorCounter++};
 
-    controller.processamentoDeSenha('password-field');
-    controller.processamentoConfirmacao('password-field','password2-field');
+    try{controller.processamentoDeCPF('cpf-field');}
+    catch(e){errorCounter++};
+
+    try{controller.processamentoDeEmail('email-field');}
+    catch(e){errorCounter++};
+
+    try{controller.processamentoDeNumeros('tel-field');}
+    catch(e){errorCounter++};
+
+    try{controller.processamentoDeCEP('cep-field');}
+    catch(e){errorCounter++};
+
+    try{controller.processamentoDeInputDeTexto('nacionalidade-field', false);}
+    catch(e){errorCounter++};
+
+    try{controller.processamentoDeInputDeTexto('complemento-field', true);}
+    catch(e){errorCounter++};
+    
+    try{controller.processamentoDeSenha('password-field');}
+    catch(e){errorCounter++};
+
+    try{controller.processamentoConfirmacao('password-field','password2-field');}
+    catch(e){errorCounter++};
+
+    errorCounter > 0? alert(`Campos inválidos: ${errorCounter}`) : alert('Cadastro efetuado com sucesso!');
 })
 
 

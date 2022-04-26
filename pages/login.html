@@ -48,41 +48,47 @@
             </div>
         </nav>
     </header>
-    <img src="../images/pictures/logologinTT.png">
+    <main>
 
-    <form>
-        <div style="text-align:center" class="mb-3 margin1">
-            
-            <label for="exampleInputEmail1" style="font-family: 'Roboto Slab';" class=" form-label"><b>Favor inserir seu
-                    endereço de e-mail:</b></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" style="font-family: 'Roboto Slab';" class="form-text">Nunca compartilharemos seu e-mail
-                com mais ninguém.</div>
-        </div>
-
-        <div style="text-align:center" class="mb-3 margin2">
-            <label for="exampleInputPassword1" style="font-family: 'Roboto Slab';" class="form-label"><b>Favor inserir
-                    sua
-                    senha:</b></label>
-            <input type="password" class="form-control margin2" id="exampleInputPassword1">
-        </div>
-
-        <div style="text-align:center" id="passwordHelpBlock" style="font-family: 'Roboto Slab';" class="form-text">
-            Nós da TinTech nunca iremos pedir sua senha, não compartilhe com ninguém.
-        </div>
-
-        <div class="mb-3 form-check" style="margin-left: 12px;">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" style="font-family: 'Roboto Slab';" for="exampleCheck1"><b>Lembrar
-                    Senha?</b></label>
-        </div>
-        <a class="rcpsenha" href="./recpsenha.html" title="Clique aqui para lhe enviarmos um e-mail de recuperação de senha."><b>Recuperar senha?</b></a>
-
-        <div class="btn">
-            <button  type="submit" class="btn btn-primary" ><b>Entrar</b></button>
-        </div>
+        <picture>
+            <img src="../images/pictures/logologinTT.png">
+        </picture>
+        <article>
+            <form style="font-size: 17px;">
+                <div style="text-align:center" class="mb-3 margin1">
+                    
+                    <label for="exampleInputEmail1" style="font-family: 'Roboto Slab';" class=" form-label"><b>Favor inserir seu
+                            endereço de e-mail:</b></label>
+                    <input type="email" id="email-field" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" style="font-family: 'Roboto Slab';" class="form-text">Nunca compartilharemos seu e-mail
+                        com mais ninguém.</div>
+                </div>
         
-    </form>
+                <div style="text-align:center" class="mb-3 margin2">
+                    <label for="exampleInputPassword1" style="font-family: 'Roboto Slab';" class="form-label"><b>Favor inserir
+                            sua
+                            senha:</b></label>
+                    <input type="password" id="password-field" class="form-control margin2">
+                </div>
+        
+                <div style="text-align:center" id="passwordHelpBlock" style="font-family: 'Roboto Slab';" class="form-text">
+                    Nós da TinTech nunca iremos pedir sua senha, não compartilhe com ninguém.
+                </div>
+        
+                <div class="mb-3 form-check" style="margin-left: 12px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" style="font-family: 'Roboto Slab';" for="exampleCheck1"><b>Lembrar
+                            Senha?</b></label>
+                </div>
+                <a class="rcpsenha" href="./recpsenha.html" title="Clique aqui para lhe enviarmos um e-mail de recuperação de senha.">Recuperar senha?</a>
+        
+                <div class="btn">
+                    <button  id='submit-btn' type="submit" class="btn btn-primary" ><b>Entrar</b></button>
+                </div>
+                
+            </form>
+        </article>
+    </main>
     <footer>
         
         <ul>
@@ -106,13 +112,13 @@
                 width="30"> TinTech
                     Corporation  </b></ol>
         </div>
+    </footer>
 
+    <script src="../JS/view/entrada-view.js"></script>
+    <script src="../JS/model/entrada-model.js"></script>
+    <script src="../JS/controller/entrada-controller.js"></script>
+    <script src="../JS/login.js"></script>
 
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
