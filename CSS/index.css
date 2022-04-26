@@ -1,17 +1,22 @@
 
-.menu-de-cadastro{
-    margin: 0; 
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(124, 32, 32, 0.1);
-    min-height: 220px;
-    padding: 1%;
-    border-radius: 10px;
-    backdrop-filter:blur(5px);
+.imgtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+.imgsubtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.botoes-inscricao{
+    display: flex;
+    width: 100%;   
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -22,6 +27,7 @@ main{
     display: flex;  
     justify-content: space-between;
     align-items: center;
+    
 }
 .navbar{
     background-color: rgb(35, 149, 153);
@@ -31,6 +37,30 @@ main{
    justify-content: center;
    align-items: center;
 }
+.fonteh2{
+    font-family: Ms Madi;
+}
+.icons-list{
+    width: 260px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ol{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+
 
 .darken{
     position: absolute;
