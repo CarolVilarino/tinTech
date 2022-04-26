@@ -152,7 +152,25 @@
 
         <!-- <p> Todos os direitos reservados ⓒ Equipe 7*</p> -->
     </footer>
-    <div id="popup-div"></div>
+    <div id="popup-div" style="display: none;" class="darken">
+        <div id="newsletter-form" class="newsletter-form">
+            <form>
+                <button id="close-btn" class="close-btn">X</button>
+                <fieldset>
+                    <label for="fnome">Insira o seu nome:</label>
+                    <input type="text" name="fnome" id="name-field">
+                </fieldset>
+                <fieldset>
+                    <label for="femail">Insira o seu E-mail:</label>
+                    <input type="email" name="femail" id="email-field">
+                </fieldset>
+                <button id="inscrevase-btn">Increva-se!</button>
+            </form>
+        </div>
+    </div>
+    <script src="./JS/view/entrada-view.js"></script>
+    <script src="./JS/model/entrada-model.js"></script>
+    <script src="./JS/controller/entrada-controller.js"></script>
     <script src="./JS/index.js"></script>
 </body>
 

@@ -69,7 +69,7 @@ main{
 .newsletter-form fieldset{
     display: flex;
     flex-direction: column;
-    margin: 50px 0;
+    margin: 10px 0;
 }
 
 .newsletter-form label{
@@ -78,6 +78,7 @@ main{
 }
 
 .newsletter-form button{
+    margin: 10px 0;
     font-size: 1.5em;
     background-color: coral;
 }

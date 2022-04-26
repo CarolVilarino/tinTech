@@ -162,3 +162,24 @@ class Entrada{
         }
     }
 }
+
+class NewsLetterController extends Entrada{
+    criaTelaPopup(field){
+        const view = new NewsLetterView;
+        view.voltaTelaParaBody();
+        view.criaCenarioParaCard(field);
+    }
+
+    escondePopup(field){
+        const view = new NewsLetterView;
+        view.escondeDiv(field);
+    }
+
+    processamentoDeNome(field){
+        super.processamentoDeInputDeTexto(field, false)
+    }
+
+    processamentoDeEmail(field){
+        super.processamentoDeEmail(field)
+    }
+}
