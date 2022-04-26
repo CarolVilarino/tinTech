@@ -9,14 +9,12 @@ class Entrada{
 
         const input = $(`#${field}`);
         
-        const isValid = model.validarNome(input, isNumberAllowed);
-
-        switch (isValid){
-            case false:
-                view.entradaInvalida(input);
-                break;
-            case true:
-                view.entradaValida(input);
+        try{
+            model.validarNome(input, isNumberAllowed);
+            view.entradaValida(input);
+        } catch(e){
+            view.entradaInvalida(input);
+            throw e;
         }
     }
 
@@ -26,13 +24,12 @@ class Entrada{
 
         const input = $(`#${field}`);
         
-        const isValid = model.validarEmail(input);
-        switch (isValid){
-            case false:
-                view.entradaInvalida(input);
-                break;
-            case true:
-                view.entradaValida(input);
+        try{
+            model.validarEmail(input);
+            view.entradaValida(input);
+        } catch(e){
+            view.entradaInvalida(input);
+            throw e
         }
     }
 
@@ -120,14 +117,12 @@ class Entrada{
 
         const input = $(`#${field}`);
 
-        const isValid = model.validarNumero(input);
-
-        switch (isValid){
-            case false:
-                view.entradaInvalida(input);
-                break;
-            case true:
-                view.entradaValida(input);
+        try{
+            model.validarNumero(input);
+            view.entradaValida(input);
+        } catch(e){
+            view.entradaInvalida(input);
+            throw e
         }
     }
 
@@ -142,17 +137,13 @@ class Entrada{
 
         const input = $(`#${field}`);
         const senha = input.val();
+
         try{
-            const isValid = model.verificaSenha(senha);
-            switch (isValid){
-                case false:
-                    view.entradaInvalida(input);
-                    break;
-                case true:
-                    view.entradaValida(input);
-            }
+            model.verificaSenha(senha);
+            view.entradaValida(input);
         } catch(e){
             view.entradaInvalida(input);
+            throw new Error('[ERROR] Senha inválida')
         }
     }
     

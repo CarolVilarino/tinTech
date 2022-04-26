@@ -14,29 +14,25 @@ class ValidaEntrada{
             });
             return true;
         } catch(e){
-            return false;
+            throw new Error('[ERROR] Entrada inválida!');
         }
     }
 
     verificaTamanhoMinimo(entrada, minLength){
-        if (entrada.length < minLength) throw Error()
+        if (entrada.length < minLength) throw new Error('[ERROR] Número de caracteres é inferior ao esperado')
     }
 
     validarNumero(entrada){
         const inputId = entrada[0].id;
-        if (entrada.val() === '') return false
+        if (entrada.val() === '') throw new Error('[ERROR] Input vazio')
         switch(inputId){
-            case 'cpf-field':
-                console.log('isso é um cpf')
-                this.information.cpf = entrada.val();
-                break;
             case 'tel-field':
-                if (entrada.val().length !== 11) return false;
+                if (entrada.val().length !== 11) throw new Error('[ERROR] Telefone inválido');
                 this.information.tel = entrada.val();
                 return true;
                 
             case 'rg-field':
-                if (entrada.val().length !== 9) return false;
+                if (entrada.val().length !== 9) throw new Error('[ERROR] RG inválio');
                 this.information.rg = entrada.val();
                 return true;
         }
@@ -100,14 +96,14 @@ class ValidaEntrada{
 
     validarEmail(input){
         const email = input.val();
-        if(email.indexOf('@') === -1 || email.indexOf('.') === -1 || email.length < 5) return false
+        if(email.indexOf('@') === -1 || email.indexOf('.') === -1 || email.length < 5) throw new Error('[ERROR] Email inválido')
         return true
     }
 
     validaData(input){
         const currentDate = new Date;
         input = input.slice(0,4)
-        if (parseInt(currentDate.getFullYear()) - parseInt(input) < 16) throw Error()
+        if (parseInt(currentDate.getFullYear()) - parseInt(input) < 16) throw new Error('[ERROR] Data inválida')
     }
 
     verificaSenha(entrada){
@@ -127,7 +123,7 @@ class ValidaEntrada{
             if ((/[A-Z]/).test(element)) hasUpperCase = true;
         })
 
-        if (!hasSpecialCharacter && !hasNumber && !hasLowerCase && !hasUpperCase) return false;
+        if (!hasSpecialCharacter && !hasNumber && !hasLowerCase && !hasUpperCase) throw new Error("[ERRO] Senha inválida");
         return true;
     }
 
