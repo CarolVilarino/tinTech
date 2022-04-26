@@ -1,12 +1,27 @@
-#conteudo-da-pagina {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body{
     background-image:url(../images/pictures/background-login.jpg);
     background-repeat: repeat;
 }
 
-#prox-pag {
-    padding: 5px;
-    background-color: lightsalmon;
+.conteudo-da-pagina {
+    width: 50%;
+    margin: auto;
+    
+}
+
+.container , h1{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col{
+    padding: 5%;
+}
+
+img{
+    width: 200px;
 }
