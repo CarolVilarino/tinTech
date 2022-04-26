@@ -6,7 +6,6 @@ body{
 .conteudo-da-pagina {
     width: 50%;
     margin: auto;
-    
 }
 
 .container , h1{
@@ -24,4 +23,8 @@ body{
 
 img{
     width: 200px;
+}
+
+.navbar{
+    background-color: coral;
 }

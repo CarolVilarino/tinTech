@@ -14,6 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/cadastro.css">
 
     <title> Cadastro de Usuario</title>
@@ -21,9 +22,9 @@
 
 <body>
     <header class="cabecalho">
-        <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+        <nav class="navbar" aria-label="First navbar example">
             <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html"><img src="../images/pictures/logologinTT.png" alt="Página Home" height="35px"></a>
+              <a class="navbar-brand" href="../index.html"><img src="../images/icon/TinTech_LOGO-min.png" alt="Página Home" height="35px"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,8 +43,6 @@
                   <li class="nav-item">
                     <a class="nav-link"href='./contatos.html'> Contatos</a>
                   </li>
-                    </ul>
-                  </li>
                 </ul>
                 <form>
                   <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
@@ -61,9 +60,9 @@
                     class="carousel slide" 
                     data-bs-ride="carousel"
                     data-bs-interval="false"
-                    style="height: 10em">
+                    >
 
-                    <div class="carousel-indicators" style="height: 10em">
+                    <div class="carousel-indicators">
                         <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -141,14 +140,14 @@
                         </div>
                     </div>
             </div>
-            <button style="transform: translate(135%, -40%)" id="submit-btn">Enviar</button>
+            <button id="submit-btn">Enviar</button>
         </section>
     </main>
-    <footer style="padding: 5%">
-        <article>
-            <h3>Filiais:</h3>
-            <ul>
-                <li>Brasil - Curitiba</li>
+    <footer>
+        
+        <ul>
+            <b><li><h3>Filiais:</h3></li>
+            <li>Brasil - Curitiba</li>
                 <li>Estados Unidos - New York</li>
                 <li>Inglaterra - Londres</li>
                 <li>Chile - Santiago</li>
@@ -156,18 +155,18 @@
         
 
 
-        <div style='text-align:right'>
-            <ol><b>tintech@hotmail.com.br - </b><img src="../images/icon/icon-email.png" alt="Icone de email" height="30"
-                    width="30"></ol>
-            <ol><b>(41) 4002-8922  - <img src="../images/icon/icon-telephone.png" alt="Icone de Contato" height="30"
-                        width="30"></b></ol>
-            <ol><b>@TinTech - </b><img src="../images/icon/icon-instagram.png" alt="Icone de Instagram" height="30"
-                    width="30"></ol>
-            <ol><b>TinTech
-                    Corporation - </b><img src="../images/icon/icon-linkedin.png" alt="Icone de Linkedin" height="30"
-                    width="30"> </ol>
+        <div class="icons-list">
+            <ol><b><img src="../images/icon/icon-email.png" alt="Icone de email" height="30"
+                width="30"> tintech@hotmail.com.br  </b></ol>
+            <ol><b><img src="../images/icon/icon-telephone.png" alt="Icone de Contato" height="30"
+                width="30"> (41) 4002-8922   </b></ol>
+            <ol><b><img src="../images/icon/icon-instagram.png" alt="Icone de Instagram" height="30"
+                width="30"> @TinTech  </b></ol>
+            <ol><b><img src="../images/icon/icon-linkedin.png" alt="Icone de Linkedin" height="30"
+                width="30"> TinTech
+                    Corporation  </b></ol>
         </div>
-        </article>
+       
 
         <!-- <p> Todos os direitos reservados ⓒ Equipe 7*</p> -->
     </footer>
