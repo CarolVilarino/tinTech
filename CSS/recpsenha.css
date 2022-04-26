@@ -10,11 +10,16 @@ form{
     backdrop-filter:blur(10px);
     border-radius: 8px;
     width: 28%;
+    font-size: 17px;
+}
+body{
+    background-image: url(../images/pictures/background-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 main{
-    height: 160%;
+    height: 70%;
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -46,7 +51,13 @@ ol{
     justify-content: center;
     flex-direction: column;
 }
-.btn-primary{
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+.btn{
     border-radius: 10px;
     color: rgb(10, 0, 0);
     display: flex;
