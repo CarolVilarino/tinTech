@@ -173,6 +173,8 @@ class NewsLetterController extends Entrada{
     escondePopup(field){
         const view = new NewsLetterView;
         view.escondeDiv(field);
+        view.mostraOverflow();
+        window.location = 'index.html'
     }
 
     processamentoDeNome(field){

@@ -56,4 +56,9 @@ class NewsLetterView{
         const div = $(`#${field}`);
         div.css('display','none');
     }
+
+    mostraOverflow(){
+        const body = $("#root")
+        body.css('overflow','visible')
+    }
 }
