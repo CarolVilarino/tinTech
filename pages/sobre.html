@@ -30,53 +30,83 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar" aria-label="First navbar example">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img src="../images/icon/TinTech_LOGO-min.png" alt="Página Home"
-            height="35px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
-          aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><svg width="30" height="30" viewBox="0 0 16 12" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 6C0 5.44772 0.447715 5 1 5H15C15.5523 5 16 5.44772 16 6V6C16 6.55228 15.5523 7 15 7H1C0.447715 7 0 6.55228 0 6V6ZM0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447715 16 1V1C16 1.55228 15.5523 2 15 2H1C0.447715 2 0 1.55228 0 1V1ZM0 11C0 11.5523 0.447715 12 1 12H15C15.5523 12 16 11.5523 16 11V11C16 10.4477 15.5523 10 15 10H1C0.447715 10 0 10.4477 0 11V11Z"
-                fill="black" />
-            </svg></span>
-        </button>
+  <header class="cabecalho">
+    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/icon/TinTech_LOGO-min.png" alt="Página Home" height="35px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample01">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./login.html"> Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./precos.html"> Preços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./dicas.html"> Dicas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href='./contatos.html'> Contatos</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+            <form>
+              <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>
 
-        <div class="collapse navbar-collapse" id="navbarsExample01">
-          <ul class="navbar-nav me-auto mb-2">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./login.html"> Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./precos.html"> Preços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./dicas.html"> Dicas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href='./contatos.html'> Contatos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href='./sobre.html'> Sobre</a>
-            </li>
-          </ul>
-          </li>
-          </ul>
-          <form>
-            <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
-          </form>
+    <main>
+      <h1>Quem somos:</h1>
+      <div class="bloco">
+        <img src="../images/pictures/ideia.png" alt="imagem que representa uma ideia" height="200px">
+        <div class="texto">
+        <h3>Como tudo começou:</h3>
+        <p>A entrada no mercado de trabalho nunca foi uma processo simples.
+          Praticamente todas as pessoas que algum dia desejaram aplicar para uma vaga
+          de emprego passaram por algum tipo de dificuldade. No ramo da tecnologia isso 
+          é muito prejudicial, afinal, o mercado precisa muito de profissionais e os 
+          profissionais precisam muito das vagas. 
+          Pensando nisso, 5 pessoas que tinham as mesmas dificuldades se juntaram
+          para elaborar uma solução. Foi quando surgiu a ideia de criar a TinTech!
         </div>
       </div>
-    </nav>
-  </header>
+      <br>
+      <div class="bloco">
+        <div class="texto">
+          <h3>Sobre o produto:</h3>
+          <p>Tintech é uma plataforma que se propõe a conectar pessoas a empresas/jobs.
+            Inspirada na experiência dos usuários com aplicativos de relacionamentos, 
+            a TinTech busca entregar uma experiência semelhante para os profissionais
+            do ramo da tecnologia que estão em busca de um emprego. Em especial àqueles
+            em início e/ou transição de carreira, pois a plataforma oferece vagas, em sua
+            grande maioria, de nível júnior.
+          </p>
+        </div>
+        <img src="../images/pictures/logo-tintech.png" alt="imagem logo da empresa" height="200px">
+      </div>
 
+      <br>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+      <div class="bloco">
+        <img src="../images/pictures/imagem-goals-achieved.png" alt="imagem de pessoa no topo de chegada" height="200px">
+        <div class="texto">
+          <h3>Onde queremos chegar?</h3>
+          <p>Nosso maior propósito é revolucionar o método utilizado pelas empresas
+            para a contratação de funcionários. Queremos tornar o processo mais rápido, 
+            eficaz e humano para todos on envolvidos.
+          </p>
+        </div>
+      </div>
+    </main>
+
 </body>
 
 </html>
