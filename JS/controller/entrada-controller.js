@@ -28,6 +28,7 @@ class Entrada{
             model.validarEmail(input);
             view.entradaValida(input);
         } catch(e){
+            console.log('error')
             view.entradaInvalida(input);
             throw e
         }
@@ -182,6 +183,12 @@ class NewsLetterController extends Entrada{
     }
 
     processamentoDeEmail(field){
+        super.processamentoDeEmail(field)
+    }
+}
+
+class RecpSenhaController extends Entrada{
+    verificaEmail(field){
         super.processamentoDeEmail(field)
     }
 }
