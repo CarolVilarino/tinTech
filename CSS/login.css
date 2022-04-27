@@ -17,6 +17,11 @@ form{
     margin-top: 5%;   
     padding: 1% 10%;
 }
+.nav-link{
+    color:black;
+    font-weight: bold;
+    margin-left: 15px;
+}
 
 .margin2{
     margin-top: 1%;

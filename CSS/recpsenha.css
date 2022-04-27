@@ -12,11 +12,7 @@ form{
     width: 28%;
     font-size: 17px;
 }
-body{
-    background-image: url(../images/pictures/background-login.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 main{
     height: 70%;
     width: 100%;
@@ -64,4 +60,9 @@ footer{
     align-items: center;
     justify-content: center;
     
+}
+.nav-link{
+    color:black;
+    font-weight: bold;
+    margin-left: 15px;
 }

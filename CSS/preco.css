@@ -1,3 +1,4 @@
+
 main article{
     padding: 20px 0;
     background-color: white;
@@ -98,4 +99,3 @@ footer div{
     100%{
         filter: hue-rotate(360deg);
     }
-}
