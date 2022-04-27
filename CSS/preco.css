@@ -14,13 +14,11 @@ article h1 b{
 }
 
 article h1 b::before{
-    -webkit-background-clip: text;
+    color: coral;
     position: absolute;
     top: 1px;
     left: -2px;
     content: 'destaque';
-    background-color: coral;
-    color: transparent;
 }
 
 article h1 b:hover{
@@ -87,9 +85,10 @@ footer h3{
     font-family: 'Press Start 2P', cursive;
 }
 
-footer picture{
+footer div{
     display: flex;
     flex-direction: column;
+    text-align: right;
 }
 
 @keyframes color-spin {
