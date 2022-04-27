@@ -9,6 +9,6 @@ body,html{
     height: 100%;
 }
 
-body{
-    background-color: white;
+body{  
+    background-image: url('../images/pictures/background-img-geometric.png');
 }
