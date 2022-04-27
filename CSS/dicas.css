@@ -16,14 +16,17 @@ body{
     flex-direction: row;
     align-items: center;
 }
+.nav-link{
+    color:black;
+    font-weight: bold;
+    margin-left: 15px;
+}
 
 .col{
     padding: 5%;
 }
 
-img{
-    width: 200px;
-}
+
 
 .navbar{
     background-color: rgb(35, 149, 153);

@@ -6,6 +6,11 @@ button{
 .navbar{
     background-color: rgb(35, 149, 153);
 }
+.nav-link{
+    color:black;
+    font-weight: bold;
+    margin-left: 15px;
+}
 
 section{
     margin: 0; 
