@@ -7,9 +7,31 @@ body,html{
     width: 100%;
     height: 100%;
 }
-body{
+form{
     display: flex;
+    align-items: center;
+    justify-content: end;
 }
+h2{
+    text-align: center;
+}
+h3{
+    margin-left: 25%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.textproduto{
+    align-items: center;
+    width: 20%;
+    padding: 1%;
+    font-size: 19px;
+}
+
 .navbar{
     background-color: rgb(35, 149, 153);
 }
