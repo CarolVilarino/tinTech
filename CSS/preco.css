@@ -1,0 +1,102 @@
+
+main article{
+    padding: 20px 0;
+    background-color: white;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article h1 b{
+    overflow: hidden;
+    position: relative;
+}
+
+article h1 b::before{
+    color: coral;
+    position: absolute;
+    top: 1px;
+    left: -2px;
+    content: 'destaque';
+}
+
+article h1 b:hover{
+    animation: color-spin 0.5s ease-in-out reverse infinite;
+}
+
+article p{
+    margin: 0;
+}
+
+.containerDeProdutos{
+    overflow: hidden;
+    padding: 2em 0;
+    margin: 0 0 2em 0;
+    background-image: url('../images/pictures/background-img-geometric.png');
+    background-color: #ff914c;
+    background-blend-mode: overlay;
+}
+
+.premium{
+    background-color: rgb(255, 156, 121);
+    color: white;
+}
+
+.free{
+    background-color: rgb(129, 221, 171);
+    color: white;
+}
+
+.card{
+    border: none;
+}
+
+.btn-primary.premium{
+    background-color: rgb(255, 156, 121);
+    border-color: rgb(255, 156, 121);
+}
+
+.btn-primary.premium:hover{
+    background-color: rgb(255, 103, 47);
+    border-color: rgb(255, 103, 47);
+}
+
+.free-btn{
+    color: rgb(129, 221, 171);
+    border-color: rgb(129, 221, 171);
+}
+
+.free-btn:hover{
+    background-color: rgb(129, 221, 171);
+    border-color: rgb(129, 221, 171);
+    color: white;
+}
+
+footer{
+    color: rgb(211, 211, 211);
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+footer h3{
+    font-family: 'Press Start 2P', cursive;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+@keyframes color-spin {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}

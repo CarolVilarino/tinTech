@@ -10,7 +10,5 @@ body,html{
 }
 
 body{
-    background-image: url('../images/pictures/background-img-geometric.png');  
-    background-color: #ff7f50;
-    background-blend-mode: overlay;
+    background-color: white;
 }

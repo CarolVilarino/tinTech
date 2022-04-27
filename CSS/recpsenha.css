@@ -10,11 +10,12 @@ form{
     backdrop-filter:blur(10px);
     border-radius: 8px;
     width: 28%;
+    font-size: 17px;
 }
-main{
-    height: 160%;
-    width: 100%;
 
+main{
+    height: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -24,7 +25,7 @@ main{
     padding: 1% 10%;
 }
 .navbar{
-    background-color: rgb(255, 127, 80);
+    background-color: rgb(35, 149, 153);
 }
 footer{
     display: flex;
@@ -46,11 +47,20 @@ ol{
     justify-content: center;
     flex-direction: column;
 }
-.btn-primary{
-    border-radius: 10px;
-    color: rgb(10, 0, 0);
+footer{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-around;
+    padding: 0 15%;
+}
+.btn> button{
+        background-color: rgb(84, 172, 179);
+        color: rgb(26, 10, 10);
+        border-radius: 8px;
+        margin-left: 300%;
+}
+.nav-link{
+    color:black;
+    font-weight: bold;
+    margin-left: 15px;
 }

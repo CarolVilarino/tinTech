@@ -31,3 +31,34 @@ class EntradaView{
         func($("#rua-field"))
     }
 }
+
+class NewsLetterView{
+    voltaTelaParaBody(){
+        window.location.href='#root'
+    }
+
+    criaCenarioParaCard(field){
+        this.mostraDiv(field);
+        this.escondeOverflow();
+    }
+
+    mostraDiv(field){
+        const div = $(`#${field}`);
+        div.css('display','flex');
+    }
+
+    escondeOverflow(){
+        const body = $("#root")
+        body.css('overflow','hidden')
+    }
+
+    escondeDiv(field){
+        const div = $(`#${field}`);
+        div.css('display','none');
+    }
+
+    mostraOverflow(){
+        const body = $("#root")
+        body.css('overflow','visible')
+    }
+}
