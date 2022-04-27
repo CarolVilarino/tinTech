@@ -97,6 +97,14 @@ footer{
     padding: 0 15%;
 }
 
+figure { 
+    text-align: center;
+}
+figure > img {
+    margin: 0.4em;
+    height: auto;
+    width: 160px;
+}
 
 .darken{
     position: absolute;
