@@ -74,7 +74,7 @@ article p{
     color: white;
 }
 
-footer{
+/* footer{
     color: rgb(211, 211, 211);
     background-color: #212529;
     display: flex;
@@ -90,7 +90,7 @@ footer div{
     display: flex;
     flex-direction: column;
     text-align: right;
-}
+} */
 
 @keyframes color-spin {
     0% {

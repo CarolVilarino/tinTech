@@ -17,11 +17,6 @@ form{
     margin-top: 5%;   
     padding: 1% 10%;
 }
-.nav-link{
-    color:black;
-    font-weight: bold;
-    margin-left: 15px;
-}
 
 .margin2{
     margin-top: 1%;
@@ -36,7 +31,7 @@ form{
     justify-content: center;
     
 }
-.btn-primary , .navbar{
+.btn-primary{
     background-color: rgb(35, 149, 153);
 }
 ol{

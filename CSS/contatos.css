@@ -16,11 +16,7 @@
     font-style: oblique;
     margin-bottom: 5px;
 }
-.nav-link{
-    color:black;
-    font-weight: bold;
-    margin-left: 15px;
-}
+
 .conteudo-da-pag {
     display: flex;
     flex-direction: column;
