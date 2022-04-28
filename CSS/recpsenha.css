@@ -24,21 +24,14 @@ main{
     margin-top: 5%;   
     padding: 1% 10%;
 }
-.navbar{
-    background-color: rgb(35, 149, 153);
-}
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 15%;
-}
+
 ol{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .icons-list{
     width: 260px;
     height: auto;
@@ -47,12 +40,7 @@ ol{
     justify-content: center;
     flex-direction: column;
 }
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 15%;
-}
+
 .btn{
     border-radius: 10px;
     color: rgb(10, 0, 0);
@@ -60,9 +48,4 @@ footer{
     align-items: center;
     justify-content: center;
     
-}
-.nav-link{
-    color:black;
-    font-weight: bold;
-    margin-left: 15px;
 }

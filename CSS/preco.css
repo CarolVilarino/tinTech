@@ -35,7 +35,7 @@ article p{
     padding: 2em 0;
     margin: 0 0 2em 0;
     background-image: url('../images/pictures/background-img-geometric.png');
-    background-color: #ff914c;
+    
     background-blend-mode: overlay;
 }
 
@@ -55,6 +55,7 @@ article p{
 .card{
     border: none;
 }
+
 
 .btn-primary.premium{
     background-color: rgb(255, 156, 121);
@@ -77,7 +78,7 @@ article p{
     color: white;
 }
 
-footer{
+/* footer{
     color: rgb(211, 211, 211);
     background-color: #212529;
     display: flex;
@@ -93,7 +94,7 @@ footer div{
     display: flex;
     flex-direction: column;
     text-align: right;
-}
+} */
 
 @keyframes color-spin {
     0% {

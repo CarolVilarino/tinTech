@@ -13,16 +13,7 @@
     border-radius: 100px;
     padding: 1%;
 }
-.nav-link{
-    color:black;
-    font-weight: bold;
-    margin-left: 15px;
-}
-.navbar-toggler{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .botoes-inscricao > button{
  padding: 10px;
  border-radius: 20px;
@@ -65,9 +56,7 @@ main{
     align-items: center;
     
 }
-.navbar{
-    background-color: rgb(35, 149, 153);
-}
+
 .btncadastro{
    display: flex;
    justify-content: center;
@@ -75,35 +64,6 @@ main{
 }
 .fonteh2{
     font-family: Ms Madi;
-}
-.icons-list{
-    width: 260px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-ol{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 15%;
-}
-
-figure { 
-    text-align: center;
-}
-figure > img {
-    margin: 0.4em;
-    height: auto;
-    width: 160px;
 }
 
 .darken{
@@ -165,32 +125,56 @@ figure > img {
     right: 25px;
 }
 
-@media (max-width: 810px) { 
-    .main-top{
-        height: auto;
-        padding: 1em 2em;
-    }
-    .imgtitulo{
-        padding: 1em;
-    }
+@media (max-width:1064px){
     .bannerInicio{
-        height: auto;
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     .textinicio{
-        width: 100%;
+        margin: 0;
+        width: 80%;
+        height: auto;
     }
-    .bannerInicio > h2 {
-        padding: 2em 1em;
+    .main-top{
+        height: 135vh;
     }
 }
-
-@media (max-width: 810px) { 
-    .imgtitulo > img{ 
+@media (max-width:780px){
+    .imgtitulo > img, .imgsubtitulo > img{
+        width: 80%;
+    }
+    #carouselExampleIndicators{
         width: 100%;
     }
-    .botoes-inscricao > button {
-        width: 100%;
+    .carousel-item > img{
+        height: 80%;
+        width: 80%;
+    }
+}
+@media (max-width:694px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+}
+@media (max-width:425px){
+    .botoes-inscricao{
+        display: flex;
+        flex-direction: column;
+    }
+    .botoes-inscricao > button{
+        width: 90%;
+    }
+}
+@media (max-width:320px){
+    .empresas-parceiras > figure > img {
+        width: 45%;
+        height: auto;
     }
 }

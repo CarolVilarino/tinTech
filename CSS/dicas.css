@@ -16,11 +16,6 @@ body{
     flex-direction: row;
     align-items: center;
 }
-.nav-link{
-    color:black;
-    font-weight: bold;
-    margin-left: 15px;
-}
 
 .col{
     padding: 5%;
