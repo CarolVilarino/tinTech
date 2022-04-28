@@ -35,7 +35,7 @@ article p{
     padding: 2em 0;
     margin: 0 0 2em 0;
     background-image: url('../images/pictures/background-img-geometric.png');
-    background-color: #ff914c;
+    
     background-blend-mode: overlay;
 }
 
@@ -52,6 +52,7 @@ article p{
 .card{
     border: none;
 }
+
 
 .btn-primary.premium{
     background-color: rgb(255, 156, 121);

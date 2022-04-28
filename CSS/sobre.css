@@ -1,1 +1,65 @@
+.bloco {
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgba(124, 32, 32, 0.1);
+    backdrop-filter:blur(5px);
+    min-height: 200px;
+    width: 60%;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    background-color: rgb(35, 149, 153);
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin-left: 25%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
 
+.textproduto{
+    align-items: center;
+    width: 20%;
+    padding: 1%;
+    font-size: 19px;
+}
+
+.navbar{
+    background-color: rgb(35, 149, 153);
+}
+.nav-link{
+    color:black;
+    font-weight: bold;
+    margin-left: 15px;
+}
