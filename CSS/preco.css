@@ -39,6 +39,9 @@ article p{
     background-blend-mode: overlay;
 }
 
+.text-center {
+    margin: 3em 2em;
+}
 .premium{
     background-color: rgb(255, 156, 121);
     color: white;
