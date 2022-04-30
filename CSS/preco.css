@@ -1,3 +1,7 @@
+body{
+    background-image: none;
+    background-color: white;
+}
 
 main article{
     padding: 20px 0;
@@ -35,7 +39,7 @@ article p{
     padding: 2em 0;
     margin: 0 0 2em 0;
     background-image: url('../images/pictures/background-img-geometric.png');
-    
+    background-color: coral;
     background-blend-mode: overlay;
 }
 

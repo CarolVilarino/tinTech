@@ -11,7 +11,9 @@ html {
 }
 
 body {
-    background-color: white;
+    background-image: url('../images/pictures/background-img-geometric.png');
+    background-color: coral;
+    background-blend-mode: overlay;
 }
 
 footer {
