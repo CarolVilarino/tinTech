@@ -5,17 +5,17 @@
 
 # :vertical_traffic_light: Status do projeto
 
-:warning::construction: **Em construção!**
+:warning::construction: **Pronto!**
 
 
 # :heavy_check_mark: Features
 
-- [ ] Landing Page;
-- [ ] Página de Cadastro;
-- [ ] Página de Login;
-- [ ] Página de Preços;
-- [ ] Página de Recuperação de Senha;
-- [ ] Página de Exemplo;
+- [x] Landing Page;
+- [x] Página de Cadastro;
+- [x] Página de Login;
+- [x] Página de Preços;
+- [x] Página de Recuperação de Senha;
+- [x] Página de Exemplo;
 
 
 # :wrench: Tecnologias utilizadas
