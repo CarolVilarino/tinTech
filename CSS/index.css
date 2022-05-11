@@ -1,7 +1,9 @@
 .imgtitulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+}
+
+h2 {
+    text-align: justify;
 }
 
 .botoes-inscricao {
@@ -115,24 +117,7 @@
         height: 135vh;
     }
 }
-
-@media (max-width:780px) {
-
-    .imgtitulo>img,
-    .imgsubtitulo>img {
-        width: 80%;
-    }
-
-    #carouselExampleIndicators {
-        width: 100%;
-    }
-
-    .carousel-item>img {
-        height: 80%;
-        width: 80%;
-    }
-}
-
+*/
 @media (max-width:694px) {
     footer {
         display: flex;
@@ -159,4 +144,4 @@
         width: 45%;
         height: auto;
     }
-} */
+}
