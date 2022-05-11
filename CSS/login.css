@@ -1,63 +1,42 @@
-
-form{
-    font-size: 18px;
-    margin: 0; 
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)  ;
-    background: rgba(124, 32, 32, 0.1);
-    backdrop-filter:blur(10px);
-    border-radius: 8px;
-    width: 28%;
+main {
+    display: flex;
+    justify-content: center;
 }
 
-.margin1{
-    margin-top: 5%;   
+.form-login {
+    font-size: 18px;
+    background: rgba(124, 32, 32, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 2%;
+    width: fit-content;
+}
+
+.margin1 {
+    margin-top: 5%;
     padding: 1% 10%;
 }
 
-.margin2{
+.margin2 {
     margin-top: 1%;
     padding: 1% 10%;
 }
 
-.btn{
+.btn {
     border-radius: 10px;
     color: rgb(10, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.btn-primary{
+
+.btn-primary {
     background-color: rgb(35, 149, 153);
 }
-ol{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.icons-list{
-    width: 260px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 15%;
-}
-.rcpsenha{
+
+.rcpsenha {
     display: flex;
     justify-content: end;
     margin-right: 20px;
 }
-
-
