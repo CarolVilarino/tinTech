@@ -11,7 +11,12 @@ html {
 }
 
 body {
-    background-image: url('../images/pictures/background-img-geometric.png');
+    background: url('../images/pictures/background-img-geometric.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
     background-color: coral;
     background-blend-mode: overlay;
 }
